@@ -2,16 +2,16 @@ import React, { ReactElement } from 'react';
 
 import LogoImg from '../../../accets/logo/a-logo.svg';
 
-import { HeaderWrapper, StyledLink, Logo } from 'common/components/header/HeaderStyle';
+import { HeaderWrapper, StyledLink, Logo, NavMenu } from 'common/components';
 
 export const Header = (): ReactElement => {
   return (
     <HeaderWrapper>
-      <div>
+      <NavMenu>
         <StyledLink to="/women">Women</StyledLink>
         <StyledLink to="men">Men</StyledLink>
         <StyledLink to="kids">Kids</StyledLink>
-      </div>
+      </NavMenu>
       <Logo src={LogoImg} alt="Logo" />
       <div>Actions</div>
     </HeaderWrapper>
