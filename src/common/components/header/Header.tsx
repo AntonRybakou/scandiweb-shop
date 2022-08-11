@@ -1,8 +1,10 @@
 import React, { ReactElement } from 'react';
 
-import LogoImg from '../../../accets/logo/a-logo.svg';
+import CartIcon from '../../../accets/images/actions/empty-cart.svg';
+import LogoImg from '../../../accets/images/logo/a-logo.svg';
 
-import { HeaderWrapper, StyledLink, Logo, NavMenu } from 'common/components';
+import CurrencyLogo from 'accets/images/actions/currency-logo.svg';
+import { HeaderWrapper, StyledLink, Logo, NavMenu, Actions } from 'common/components';
 
 export const Header = (): ReactElement => {
   return (
@@ -13,7 +15,14 @@ export const Header = (): ReactElement => {
         <StyledLink to="kids">Kids</StyledLink>
       </NavMenu>
       <Logo src={LogoImg} alt="Logo" />
-      <div>Actions</div>
+      <Actions>
+        <div>
+          <img src={CurrencyLogo} alt="Currency Logo" />
+        </div>
+        <div>
+          <img src={CartIcon} alt="empty cart" />
+        </div>
+      </Actions>
     </HeaderWrapper>
   );
 };

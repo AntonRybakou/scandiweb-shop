@@ -7,9 +7,9 @@ import { AppRoutes, Header } from 'common/components';
 export const App = (): ReactElement => {
   const AppWrapper = styled.div`
     margin: 0 auto;
-    width: 1240px;
+    padding: 0 100px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     border: 1px dotted darkred;
   `;
 
