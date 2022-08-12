@@ -14,7 +14,6 @@ export const Header = (): ReactElement => {
     justify-content: space-between;
     width: 100%;
     height: 80px;
-    border: 1px solid black;
   `;
 
   const Logo = styled.img`
